@@ -1,10 +1,11 @@
-package com.diary.diary.model;
+package com.vvn13.diary2.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @AllArgsConstructor
@@ -22,7 +23,6 @@ public class Subject {
     @Column(name = "title")
     private String title;
 
-    @OneToMany(mappedBy = "subject")
-    Set<SubjectMark> marks;
-
+    @OneToMany(mappedBy = "subject", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private Set<ModelsLink> modelsLinks;
 }

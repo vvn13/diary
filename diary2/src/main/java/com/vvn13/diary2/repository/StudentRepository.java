@@ -1,6 +1,6 @@
-package com.diary.diary.repository;
+package com.vvn13.diary2.repository;
 
-import com.diary.diary.model.Student;
+import com.vvn13.diary2.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository

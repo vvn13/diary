@@ -1,6 +1,6 @@
-package com.diary.diary.repository;
+package com.vvn13.diary2.repository;
 
-import com.diary.diary.model.Subject;
+import com.vvn13.diary2.model.Subject;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SubjectRepository
